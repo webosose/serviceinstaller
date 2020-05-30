@@ -1,0 +1,4 @@
+Open Source Software Package:
+- name: webOSOSE-serviceinstaller
+  source: https://github.com/webosose/serviceinstaller
+  license: Apache-2.0
