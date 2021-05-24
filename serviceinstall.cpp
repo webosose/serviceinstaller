@@ -1,4 +1,4 @@
-// Copyright (c) 2010-2018 LG Electronics, Inc.
+// Copyright (c) 2010-2021 LG Electronics, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -34,10 +34,10 @@ static void _mkdir(char *dir)
 
 	if ((tmp = strdup(dir)) != NULL) {
 		len = strlen(tmp);
-		if (tmp[len - 1] == '/') tmp[len - 1] = 0;
+		if (tmp[len - 1] == '/') tmp[len - 1] = '\0';
 		for(p = tmp + 1; *p; p++)
 			if (*p == '/') {
-				*p = 0;
+				*p = '\0';
 				mkdir(tmp, S_IRWXU);
 				*p = '/';
 			}
